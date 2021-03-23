@@ -1,4 +1,5 @@
 import React from 'react';
+import Typist from 'react-typist';
 import me from '../../me.jpeg';
 import './home.scss';
 
@@ -13,7 +14,9 @@ const Home: React.FC<IHomeProps> = () => {
       <div className='content'>
         <h1>Thomas West</h1>
         <hr />
-        <h2>Software Engineer, Bristol</h2>
+          <h2>
+            <Typist>Software Engineer, Bristol</Typist>
+          </h2>
         <hr />
         <p>Tom is passionate about designing and building creative solutions to complex problems.</p>
         <p>
