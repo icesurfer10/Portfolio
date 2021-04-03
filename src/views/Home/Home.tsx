@@ -2,6 +2,7 @@ import React from 'react';
 import Typist from 'react-typist';
 import me from '../../me.jpeg';
 import './home.scss';
+import 'react-typist/dist/Typist.css';
 
 export interface IHomeProps {
 
@@ -15,7 +16,7 @@ const Home: React.FC<IHomeProps> = () => {
         <h1>Thomas West</h1>
         <hr />
           <h2>
-            <Typist>Software Engineer, Bristol</Typist>
+            <Typist startDelay={1000}>Software Engineer, Bristol</Typist>
           </h2>
         <hr />
         <p>Tom is passionate about designing and building creative solutions to complex problems.</p>
