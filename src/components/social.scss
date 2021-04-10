@@ -1,10 +1,14 @@
 .social {
   .icon {
-    height: 2em;
-    width: 2em;
+    margin-right: 1em;
 
     &:hover {
       fill: #E2B23C;
+    }
+
+    svg {
+      height: 3em;
+      width: 3em;
     }
   }
 }

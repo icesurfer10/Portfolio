@@ -21,8 +21,13 @@
       font-size: 2em;
       color: #E2B23C;
     }
+
     p {
       font-size: 18px;
+
+      &:last-of-type {
+        margin-bottom: 2em;
+      }
     }
 
     hr {
