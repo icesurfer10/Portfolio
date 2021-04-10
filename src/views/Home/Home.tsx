@@ -1,6 +1,8 @@
 import React from 'react';
 import Typist from 'react-typist';
-import me from '../../me.jpeg';
+import me from '../../assets/images/me.jpeg';
+import content from '../../content/content';
+
 import './home.scss';
 import 'react-typist/dist/Typist.css';
 
@@ -13,23 +15,16 @@ const Home: React.FC<IHomeProps> = () => {
     <section className='home'>
       <img src={me} alt='logo'></img>
       <div className='content'>
-        <h1>Thomas West</h1>
+        <h1>{content.text('profile.name')}</h1>
         <hr />
           <h2>
-            <Typist startDelay={1000}>Software Engineer, Bristol</Typist>
+            <Typist startDelay={1000}>{content.text('profile.jobTitle')}</Typist>
           </h2>
         <hr />
-        <p>Tom is passionate about designing and building creative solutions to complex problems.</p>
-        <p>
-          He is a technical lead at Good Energy, doing his part to tackle climate change, something he has always been passionate about.
-        </p>
-        <p>
-          Tom believes in supporting the development community by actively mentoring other developers and demonstrates different technologies and techniques.
-        </p>
-        <p>
-          Whilst out of the workplace, Tom can often be found walking his dog Maggie with his partner Eloise,
-          trying out new recipies or playing pool in the Bristol Pool League.
-        </p>
+        <p>{content.text('home.paragraphOne')}</p>
+        <p>{content.text('home.paragraphTwo')}</p>
+        <p>{content.text('home.paragraphThree')}</p>
+        <p>{content.text('home.paragraphFour')}</p>
       </div>
     </section>
   );

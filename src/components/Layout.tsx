@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Layout: React.FC<React.PropsWithChildren<any>> = ({ children}) => {
+const Layout: React.FC<React.PropsWithChildren<any>> = ({ children }) => {
   return (
     <div>
       <React.Fragment>
